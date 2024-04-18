@@ -2,18 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 body {
     background-color: rgb(26, 40, 41);
     min-width: 600px;
-    max-width: 1920px;
     max-width: fit-content;
+    max-width: 1920px;
     
 }
 header {
     margin-bottom: 2rem;
+}
+
+.menuButton {
+    display: none;
 }
 
 header .subMenuContainer {
@@ -29,10 +34,6 @@ header .subMenuContainer {
    transition: all .5 ease-in-out;
 
    
-}
-
-.menuButton {
-    display: none;
 }
 
 .subMenu ul {
@@ -482,7 +483,8 @@ header .subMenuContainer {
         grid-auto-flow: column;
         gap: 10px;
         place-items: center;
-        margin: 20px 0;
+        margin: auto 20px;
+        
         
 
         
@@ -778,6 +780,10 @@ header .subMenuContainer {
    
         color: #e0dede;
     }
+
+    .menuButton {
+        display: flex;
+    }
     header {
         display: flex;
         justify-content: space-between;
@@ -824,10 +830,6 @@ header .subMenuContainer {
         grid-template-areas: "intro intro intro"
                              "left left left"
                              "right right right";
-    }
-
-    .menuButton {
-        display: flex;
     }
 
 }
