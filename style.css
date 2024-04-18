@@ -193,6 +193,18 @@ header .subMenuContainer {
     animation: dropAnimation;
     
 }
+ footer {
+        display: grid;
+        grid-auto-flow: columns;
+        grid-template-rows: 1fr 1fr;
+        align-items: baseline;
+        justify-items: left;
+        row-gap: 10px;
+        background-color: rgb(16, 26, 27);
+    }
+
+
+
 
 
 @keyframes dropAnimation {
