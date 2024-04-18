@@ -480,9 +480,9 @@ header .subMenuContainer {
 
     .coding-grid {
         display: grid;
-        grid-auto-flow: row;
-        gap: 10px;
-        grid-template-colums: 1fr 1fr;
+        grid-auto-flow: column;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
         margin: 20px auto;
         
         
