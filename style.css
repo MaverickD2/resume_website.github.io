@@ -804,6 +804,7 @@ header .subMenuContainer {
         display: grid;
         grid-auto-flow: row;
         gap: 20px;
+        grid-template-columns: 1fr;
         
     }
 
