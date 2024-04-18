@@ -1,0 +1,825 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(26, 40, 41);
+    
+    
+}
+header {
+    margin-bottom: 2rem;
+}
+
+header .subMenuContainer {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+   z-index: 9999;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   right: 0;
+   backdrop-filter: blur(10px);
+   display: none;
+   transition: all .5 ease-in-out;
+
+   
+}
+
+.subMenu ul {
+    list-style: none;
+    align-items: center;
+}
+
+.subMenu ul a   {
+    text-decoration: none;
+    justify-content: space-around;
+    color: #e0dede;
+    font-size: 32pt;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(1, 21, 26);
+
+    
+    
+ }
+.subMenu ul .close {
+    text-align: center;
+    justify-content: center;
+    margin-left: 30%;
+}
+
+ .subMenu ul .close img {
+     width: 32pt;
+     
+     background-color: #e0dede;
+     border-radius: 30px;
+     text-align: center;
+     
+     
+ }
+ .subMenu ul img:hover {
+     box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+     transform: scale(1.1);
+     transition: .3s;
+     background-color: #ffffff;
+ }
+ 
+ .subMenu a:hover {
+     color: #ffffff;
+     text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+     
+     transform: scale(1.1);
+     transition: .3s;
+ }
+ 
+ header .subMenu ul li {
+     margin: auto 10px;
+     
+ }
+ header .subMenu ul {
+    padding: 10px;
+    margin: 150px auto;
+    
+ }
+
+
+
+
+.title a {
+    color: #e0dede;
+    text-shadow: 2px 2px 3px royalblue;
+    text-decoration: none;
+}
+.topNavContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(16, 26, 27);
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.menu  a{
+    text-decoration: none;
+    color: #e0dede;
+    font-size: 20px;
+    font-weight: 400;
+    
+    
+    
+}
+
+
+
+
+.menu .navbar a, #navbar button {
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(41, 41, 41, 0.5);
+    margin: .5rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(1, 36, 43);
+    border: 2px solid rgba(12, 12, 12, 0.5);
+
+
+}
+
+.menu .navbar a:hover, #navbar button:hover {
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(41, 41, 41, 0.5);
+    margin: .5rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(1, 21, 26);
+    border: 2px solid rgb(12, 12, 12);
+    color: #ffffff;
+    transition: .3s;
+
+
+}
+
+
+
+
+.menu #navbar:nth-of-type(5) a.about {
+    padding-right: .5rem;
+    margin-right: 0;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.menu .dropdown {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu ul {
+    flex-direction: row;
+    display: flex;
+    list-style: none;
+}
+
+.menu .dropdown-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    margin-top: 55px;
+    padding: 20px 0 ;
+    background-color: rgb(10, 16, 17);
+    border: 2px solid rgb(5, 8, 8);
+    border-radius: 5px;
+    right: 15px;
+    top: 75px;
+    box-shadow: 2px 2px 5px rgba(17, 17, 17, 0.815);
+}
+
+.showDropdown {
+    display: flex;
+    animation: dropAnimation;
+    
+}
+
+
+@keyframes dropAnimation {
+    from {
+        max-height: 0%;
+        
+    }
+    to {
+        max-height: 10%;
+        
+    }
+    to {
+        max-height: 25%;
+    }
+    to {
+        max-height: 50%;
+    }
+    to {
+        max-height: 75%;
+    }
+    to {
+        max-height: 100%;
+    }
+
+    
+}
+
+
+
+.menu .dropdown-items a {
+    padding: 10px 30px;
+    
+    margin: 10px 0;
+    
+    max-width: 100%;
+    
+}
+
+.menu .dropdown-items a:hover {
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.dropdown .about{
+    display: flex;
+    flex-direction: row;
+    
+    
+    
+    
+}
+
+#navbar button {
+    background: transparent;
+    text-align: center;
+    color: #e0dede;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(41, 41, 41, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 5px;
+    margin-left: .2rem;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 2px 2px 5px rgb(1, 36, 43);
+    border: 2px solid rgba(12, 12, 12, 0.5);
+
+    
+}
+
+
+
+
+
+
+.card a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.card a p {
+    font-size: 12pt;
+
+}
+
+.card a h3 {
+    font-size: 18pt;
+}
+
+/* Slider Elements */
+
+.slider {
+    
+    max-width: 75%;
+    margin: 40px auto;
+    max-height: 50%;
+    position: relative;
+}
+
+
+
+.slides .card {
+    background-color: powderblue;
+    padding: 5px 10px 30px 10px;
+    border: 3px solid rgb(16, 26, 27);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 5px rgba(41, 41, 41, 0.5);
+    justify-content: center;
+    text-align: center;
+    display: none;
+    
+   
+}
+
+.slides .card:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.card.displaySlide {
+    display: block;
+    animation: fadeIn .5s;
+    
+    
+}
+
+.slides img {
+    
+    width: 100%;
+    border-radius: 10px;
+    
+    
+}
+
+.slider button {
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    border-radius: 50%;
+    border:2px solid rgba(0, 0, 0, 0.7);
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    color: aliceblue;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.slider button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    transition: .3s;
+    transform: scale(1.1) translateY(-45%);
+}
+
+.next {
+    right: -15%;
+    
+}
+
+
+
+.prev {
+    left: -15%;
+    
+}
+
+
+
+
+/* Slider animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+        transform: scale(.9);
+        
+        
+    }
+    to {
+        opacity: 1;
+        
+    }
+}
+
+.blogcontainer {
+    display: flex;
+    flex-direction: row;
+    margin: 15px auto;
+}
+
+.blog, .coding, .video, .about-me, .resume {
+    margin: 20px 30px;
+}
+
+.section-title {
+    color: #e0dede;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    margin: 5px auto;
+    font-size: 32pt;
+
+}
+.divider {
+    color: #e0dede;
+    max-width: 100%;
+    border: 5px solid #e0dede;
+    margin: 10px auto;
+}
+
+.blogcontainer img{
+    border: 2px solid rgba(6, 10, 10, 0.911);
+    box-shadow: 2px 2px 2px rgb(26, 40, 41);
+    border-radius: 5px;
+    max-width: 512px;
+    max-height: 288px;
+}
+
+
+.text {
+    overflow: hidden;
+    margin: auto 10px;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    
+    }
+    
+    
+    .text a {
+        text-decoration: none;
+        color: #e0dede;
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+        transition: 0.3s;
+    
+    }
+    
+    .text a h2 {
+        font-size: 24pt;
+        margin-bottom: 10px;
+        text-align: left;
+        
+    }
+    
+    .text a:hover {
+        color: #ffffff;
+        text-shadow: 3px 3px 3px rgb(5, 8, 8);
+    }
+    
+    
+    
+    .readmore-link a {
+        text-decoration: none;
+        color: rgb(148, 219, 243);
+        font-size: 14pt;
+        text-shadow: 3px 3px 2px rgb(29, 29, 29);
+        
+    }
+       
+    .readmore-link a:hover {
+        text-decoration: none;
+        color: #ffffff;
+        transition: .3s;
+        text-shadow: 3px 3px 3px rgb(5, 8, 8);
+    }
+    
+    .paragraph {
+        text-align: left;
+        overflow: hidden;
+        color: #ffffff;
+        line-height: 1.5;
+        position: relative;
+        font-size: 12pt;
+        
+    }
+    .readmore-link {
+        position: absolute;
+        background-image: linear-gradient(to bottom, transparent) ;
+        height: 25%;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        backdrop-filter: blur(3px);
+        
+    }
+
+    .coding-grid {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 10px;
+        place-items: center;
+        margin: 20px auto;
+        
+
+        
+    }
+    
+    .codingcontainer img {
+        max-width: 500px;
+        border-radius: 5px;
+        
+        
+    }
+    .codingcontainer {
+        padding: 15px;
+        background: linear-gradient(to bottom right,  rgba(17, 27, 27, 0.7), rgba(63, 114, 117, 0.7));
+        text-align: center;
+        max-width: 550px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgb(1, 36, 43);
+    }
+
+    .codingcontainer:hover, .codingcontainer a:hover {
+        transform: scale(1.1);
+        transition: .3s;
+        color: #ffffff;
+        text-shadow: 3px 3px 3px rgb(5, 8, 8);
+    }
+
+    .codingcontainer a {
+        color: #e0dede;
+        text-decoration: none;
+        font-size: 16pt;
+        text-shadow: 3px 3px 3px rgb(16, 26, 27);
+
+
+    }
+    
+    
+    
+    .video-grid {
+        display: grid;
+        grid-auto-flow: row;
+        gap: 10px 20px;
+        place-items: center;
+        margin: 20px auto;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .videocontainer {
+        padding: 15px;
+        background: linear-gradient(to bottom right,  rgba(17, 27, 27, 0.7), rgba(63, 114, 117, 0.7));
+        text-align: center;
+        max-width: 600px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgb(1, 36, 43);
+    }
+
+    
+        
+    .aboutcontainer {
+        display: grid;
+        place-items: center;
+        margin: 20px auto;
+        
+    }
+
+     .aboutcontainer .text {
+        max-width: 700px;
+        
+        justify-content: center;
+     }
+    .aboutcontainer img {
+        border-radius: 50%;
+        border: 5px solid rgb(148, 219, 243);
+        max-width: 500px;
+
+    }
+    .about-me h2 {
+        display: inline-flex;
+    }
+
+   
+    
+    
+    
+    .resumecontainer {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: "intro intro intro"
+                             "left right right"
+                             "left right right";
+    }
+    .resumecontainer a {
+        text-decoration: none;
+        color: aqua;
+    }
+    
+    .intro {
+        
+        grid-area: intro; 
+        padding: 2rem;
+        padding-bottom: 1.5rem;
+        
+    
+    }
+    
+    .left {
+        grid-area: left;
+        background-color: rgb(33, 71, 68);
+        
+        border-radius: 0px 10px 10px 0px;
+        padding: 2rem;
+    
+        
+    }
+    
+    .right {
+        grid-area: right;
+        color: #ffffff;
+        display: grid;
+        grid-auto-flow: row;
+        margin-left: 2rem;
+        line-height: 1.5;
+        padding: 2rem;
+    }
+    
+    
+    .graph .circle {
+        display: block;
+        background-color: rgb(17, 145, 102);
+        width: 50%;
+        border-radius: 10px;
+        padding-left: 10px;
+        font-size: 12pt;
+        font-weight: bold;
+        
+        
+    }
+    
+    .graph .circle.one {
+        display: block;
+        background-color: rgb(17, 145, 102);
+        width: 80%;
+        border-radius: 10px;
+        
+        
+    }
+    
+    .graph .circle.two {
+        display: block;
+        background-color: rgb(17, 145, 102);
+        width: 98%;
+        border-radius: 10px;
+        
+        
+    }
+    .graph .circle.three {
+        display: block;
+        background-color: rgb(17, 145, 102);
+        width: 80%;
+        border-radius: 10px;
+        
+        
+        
+    }
+    .graph .circle.four {
+        display: block;
+        background-color: rgb(17, 145, 102);
+        width: 70%;
+        border-radius: 10px;
+        
+        
+        
+    }
+    
+    .skill-name h3 {
+        color: white;
+        text-align: center;
+        
+        
+    }
+    
+    
+    
+    .graph {
+        display: block;
+        background-color: aquamarine;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 0;
+        margin-top: 0;
+    }
+    
+    
+    
+    /*intro*/
+    
+    .intro {
+        justify-content: center;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 2px 2px 2px rgb(148, 219, 243);
+        font-size: 20pt;
+        
+    }
+    
+    .left ul{
+        padding-left: 2rem;
+        padding-bottom: 10px;
+        color: white;
+        list-style: none;
+        font-size: 12pt;
+        
+    }
+    
+    .resumecontainer .left h2 {
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+        color: white;
+        
+    
+    }
+    .resumecontainer .right ul {
+        font-size: 12pt;
+    }
+    
+    
+    .Soft > ul, .Hard > ul, .Hobbies > ul {
+        list-style: none;
+        padding: 0;
+        margin-left: 10px;
+        font-weight: bold;
+        
+    
+    }
+    
+    .Soft > ul > li, .Hard > ul > li, .Hobbies > ul > li {
+        font-size: 12pt;
+        justify-content: center;
+        display: inline-block;
+        padding: 4px;
+        background-color: aquamarine;
+        border-radius: 10px;
+        margin: 3px;
+        color: #000000;
+    
+    
+    }
+    .Contact, .Hard, .Soft, .Hobbies, .Education {
+        margin-bottom: 15px;
+    }
+    
+    
+    
+    
+    
+    .Education > h3, h4, .Education > em {
+        color: white;
+        margin-left: 20px;
+    }
+    
+    .material-icons { 
+        color: rgba(255, 255, 255, 1);
+        padding-right: 5px;
+    }
+    
+    .material-icons a {
+        text-decoration: none;
+    }
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    
+    .menu ul {
+        display: none;
+    }
+    .menuButton button, .menuButton .material-symbols-outlined{
+        display: flex;
+        margin-right: 30px;
+        cursor: pointer;
+        background: transparent;
+        font-size: 32pt;
+   
+        color: #e0dede;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(16, 26, 27);
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+
+    .blogcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .coding-grid {
+        display: grid;
+        grid-auto-flow: row;
+        gap: 20px;
+        
+    }
+
+    .video-grid {
+        display: grid;
+        grid-auto-flow: row;
+        gap: 10px 20px;
+        place-items: center;
+        margin: 20px auto;
+        grid-template-columns: 1fr;
+        
+
+    }
+
+    .about-me h2{
+        display: inline-block;
+    }
+
+
+
+    .resumecontainer {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: "intro intro intro"
+                             "left left left"
+                             "right right right";
+    }
+
+}
+
+

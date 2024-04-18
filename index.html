@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card slider</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="/blog/style.css">
+</head>
+<body>
+    <header>
+        <nav class="subMenu" id="subMenu">
+            <div class="subMenuContainer" onclick=closeMenu()>
+                <ul >
+                    <li class="nav-links" ><a href="/blog/index.html">Home</a></li>
+                    <li class="nav-links" ><a href="#blog">Blog</a></li>
+                    <li class="nav-links" ><a href="#coding">Coding</a></li>
+                    <li class="nav-links" ><a href="#videos">Videos</a></li>
+                    <li class="nav-links" ><a href="#about">About</a></li>
+                    <li class="nav-links" ><a href="#resume">Resume</a></li>
+                    <li class="nav-links" ><a href="#">Contact</a></li>
+                    <li class="nav-links" ><a href="#" class="close"><img src="/photos/close_FILL0_wght400_GRAD0_opsz24.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="menuButton">
+                <button onclick=openMenu() id="openMenu" class="material-symbols-outlined">
+                        menu
+                    </button>
+                
+                </div>
+        </nav>
+        <div class="topNavContainer">
+            <h1 class="title"><a href="#">Tre' Thomas's Portfolio</a></h1>
+            <nav class="menu">
+                <ul>
+                    <li id="navbar"   class="navbar"><a href="/blog/index.html">Home</a></li>
+                    <li id="navbar" class="navbar"><a href="#blog">Blog</a></li>
+                    <li id="navbar" class="navbar"><a href="#coding">Coding</a></li>
+                    <li id="navbar" class="navbar"><a href="#videos">Videos</a></li>
+                    <li id="navbar" class="dropdown navbar"><a href="#about" class="about">About</a></li>
+                    <li id="navbar"><button class="next material-symbols-outlined navbar" id="openDrop" onclick="openDrop()">expand_more</button>
+                        <div class="dropdown-items">
+                            <a href="#resume">Resume</a>
+                            <a href="#about">About Me</a>
+                            <a href="#Contact">Contact</a>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <div class="slider">
+        <div class="slides">
+            <div class="card">
+                <img src="/photos/profile_div.png" alt="Static Profile UI Example">
+                <div class="text-info">
+                    <a href="#"><h3>Static Profile UI Example</h3>
+                    <p class="description">A Coding Example</p></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/photos/bbtagthumbnail.png" alt="What Happened To BBTag? A Blog">
+                <div class="text-info">
+                    <a href=""><h3>What Happened To BBTag?</h3>
+                    <p class="description">A Blog Example</p></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/photos/The_best.png" alt="Dragon Ball Z: Budokai 3 A Video Essay">
+                <div class="text-info">
+                    <a href="https://youtu.be/QEK8oaR87JA"><h3>Dragon Ball Z: Budokai 3</h3>
+                    <p class="description">A Video Essay Example</p></a>
+                </div>
+            </div>
+        </div>
+        <!--Slide Buttons-->
+        <button class="prev" onclick="prevSlide()">&#10094</button>
+        <button class="next" onclick="nextSlide()">&#10095</button>
+    </div>
+</main>
+<section class="blog" id="blog">
+    <h1 class="section-title">Blog Examples</h1>
+    <div class="divider"></div>
+    <div class="blogcontainer">
+        <img loading="lazy" src="/photos/bbtagthumbnail.png" alt="What Happened To BBTag? A Blog">
+        <div class="text">
+            <a href=""><h2>What Happened To BlazBlue CrossTag Battle?</h2></a>
+            <p class="paragraph"><i>Blazblue Cross Tag Battle</i>: The most recent console installment in a decade plus long franchise. But before getting into that, let’s give a little information about the <i>BlazBlue</i> franchise. <i>Blazblue</i> was created by the former Arc System Works director, Toshimichi Mori. He was recruited by the man himself, Daisuke Ishiwatari in 2003 to work at the fighting game studio. One of his assignments was to help on <i>Guilty Gear Isuka.</i> Mori would later serve as the director of <i>Guilty Gear XX Slash</i>.
+                Arc System Works, not being as big in the late 90’s and early 2000’s, had a problem when it came to guilty gear. They didn't own it, kind of. Without the help of a publisher, the small dev team wouldnt be able to get their game into the hands of consumers. At that time, Sammy, not merged with Sega yet, 
+            </p>
+            <div class="readmore-link"><a target="_blank" href="">Read More</a></div>
+        </div>
+    </div>
+    
+    <div class="blogcontainer">
+        <img loading="lazy" src="/photos/ichiban.png" alt="Like A Dragon Infinite Wealth Review">
+        <div class="text">
+            <a target="_blank" href="https://medium.com/@mavstargaming/waiting-for-the-end-like-a-dragon-infinite-wealth-review-b8e8c9fb6082"><h2>Waiting For The End: Like A Dragon: Infinite Wealth Review</h2></a>
+            <p class="paragraph">I went into Like A Dragon: Infinite Wealth, waiting for a character’s life to end. Whether it was Kiryu, a new party member from Hawaii, or the antagonists of the game. I spent most of my time wondering who was going to play the little brother role in this game (RIP Rikiya and Shinji). Anything to avoid the death of the former series protagonist, Kiryu Kazama. Regardless, this game was a great way to finalize Ichiban Kasuga as the new dragon heading forward in the series while sending Kiryu off in a way that would keep most people content. </p>
+            <div class="readmore-link"><a target="_blank" href="https://medium.com/@mavstargaming/waiting-for-the-end-like-a-dragon-infinite-wealth-review-b8e8c9fb6082">Read More</a></div>
+        </div>
+    </div>
+</section>
+<section class="coding" id="coding">
+    <h1 class="section-title">Coding Examples</h1>
+    <div class="divider"></div>
+    <div class="coding-grid">
+        <div class="codingcontainer" id="codingcontainer-1">
+            <a target="_blank" href="#">
+                <img loading="lazy" src="/photos/QR_div.png" alt="QR Code Example">
+                <h3>QR Code</h3>
+            </a>
+        </div>
+        <div class="codingcontainer" id="codingcontainer-2">
+            <a target="_blank" href="#">
+                <img loading="lazy" src="/photos/profile_div.png" alt="Profile UI Example">
+                <h3>Profile Design Template</h3>
+            </a>
+        </div>
+        <div class="codingcontainer" id="codingcontainer-2">
+            <a target="_blank" href="#">
+                <img loading="lazy" src="/photos/website.png" alt="Website Template Example">
+                <h3>Web Design Template</h3>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="video" id="videos">
+    <h1 class="section-title">Video Examples</h1>
+    <div class="divider"></div>
+    <div class="video-grid">
+        <div class="videocontainer" id="videocontainer-1">
+            <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/QEK8oaR87JA?si=3wFY37_81at9pjcl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+        </div>
+        <div class="videocontainer" id="videocontainer-2">
+            <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/89zdTZ_h1Mo?si=K4yFBGEsogQw1LRG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="videocontainer" id="videocontainer-3">
+            <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/G5nxr2ZR-uI?si=NoFmg6oHrzhjMvuf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="videocontainer" id="videocontainer-4">
+            <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/gZpdKuCsX_g?si=NoVbLsSuvEllzYlN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+</section>
+<section class="about-me" id="about">
+    <h1 class="section-title">About Me</h1>
+    <div class="divider"></div>
+    <div class="aboutcontainer">
+        <img loading="lazy" src="/photos/profile.jpg" alt="Profile Picture">
+        <div class="text">
+            <a href=""><h2>Summary</h2></a>
+            <p class="paragraph">Video games have always been a passion of mine. But one goal I set out to achieve was to build and grow a community that is safe and inclusive through writing. My attendance at Indiana University Bloomington assisted in learning to collaborate and participate with people from many cultural backgrounds. As part of a program called GROUPS, we worked together to solve problems and learned to articulate myself in a respectful manner. This is shown in my Medium blog.</p><br>
+            <p class="paragraph">While managing my Medium blog, I’ve authored various articles about video games. My extensive knowledge of the Yakuza franchise led to two reviews that people liked on both Medium as well as YouTube.</p> <br>
+            <p class="paragraph">On YouTube, I write and edit video essays on anime video games including but not limited to Naruto and Dragon Ball. I interact with every comment in a timely manner while making content that my viewers suggest as we grow together.</p> <br>
+            <p class="paragraph">I have grown my knowledge of programming as well. While not at what I would call a proffesional yet, I made many projects ranging from simple resume templates to static webpages. In the future, I hope to enhance my skills through real world problems.</p> <br>
+        </div>
+    </div>
+</section>
+<section class="resume" id="resume">
+    <h1 class="section-title">Resume</h1>
+    <div class="divider"></div>
+    <div class="resumecontainer">
+        
+            <div class="intro">
+                
+                <h1>Tre'Marcus Thomas</h1>
+                
+            </div>
+    
+            <div class="left">
+                <div class="Contact">
+                    <h2>Contact</h2>
+                    <ul class="contact-info">
+                        <li class="Address"><span class="material-icons">
+                            location_on
+                            </span><span class="info">Kissimmee, Fl</span></li>
+                        
+                        <li class="Email"><span class="material-icons">email
+                            </span><span class="info">trethomas33@gmail.com</span></li>
+                            <li class="Twitter"><span class="material-icons">person
+                            </span><span class="info"><a target="_blank" href="https://linktr.ee/maverickdallas2">linktr.ee</a></span></li>
+                        
+                     </ul>
+                </div>
+                <div class="Soft">
+                    <h2>Soft Skills</h2>
+                    <ul class="Soft-list">
+                        <li>Active Listening</li>
+                        <li>Storytelling</li>
+                        <li>Time Management</li>
+                        <li>Communication</li>
+                        <li>Adaptible</li>
+                        <li>Willing To Learn New Skills</li>
+                        <li>Taking Constructive Feedback</li>
+                        <li>Team Building</li>
+                    </ul>
+                </div>
+                <div class="Hard">
+                    <h2>Hard Skills</h2>
+                    <div class="graph-wrap">
+                        <div class="skill-name"><h3>HTML</h3>
+                            <div class="graph">
+                                <div class="circle one">80%</div>
+                            </div>
+                        </div>
+                        <div class="skill-name"><h3>Microsoft Word</h3>
+                            <div class="graph">
+                                <div class="circle two">98%</div>
+                            </div>
+                        </div>
+                        <div class="skill-name"><h3>Writing</h3>
+                            <div class="graph">
+                                <div class="circle three">80%</div>
+                            </div>
+                        </div>
+                        <div class="skill-name"><h3>Content Creation</h3>
+                            <div class="graph">
+                                <div class="circle four">70%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Hobbies">
+                    <h2>Interests</h2>
+                    <ul>
+                        <li>Gaming</li>
+                        <li>Poetry</li>
+                        
+                        <li>Vlogging</li>
+                        <li>Anime</li>
+                    </ul>
+                </div>
+                <div class="Education">
+                    <h2>Education</h2>
+                    <h3>Bachelor of Science - <span class="date"></span></h3>
+                    <h4>Indiana University Bloomington</h4>
+                    
+    
+                </div>
+    
+            </div>
+        
+    
+            <div class="right">
+                <div class="Summary">
+                    <h2>Summary</h2>
+                    <p>As a passionate writer and content creator, I explore entertaining and engaging avenues to bring information to relevant audiences on social media platforms. As I've grown, I have expanded my knowledge of key skills such as HTML5, social media engagement, and content moderation to higher levels. This resume is one of the many projects I've made from scratch. With certified skills in poetry, I weave those basic ideas into prompting engagement with my audiences. Due to this experience, I've collected a niche, but loyal audience centered around a video game character on Twitter/X that resulted in thousands of views.</p>
+                </div>
+            </header>
+            <div class="Work">
+                <h2>Experience</h2>
+                    <h3>Author <span class="date">(2022-Present)</span></h3>
+                    <em>Self-employed</em>
+                    <ul>
+                        <li>Written poetry, articles, video scripts, short stories, and other forms of literature.</li>
+                        <li>Created basic Excel spread sheets to keep myself organized while planning a book launch.</li>
+                    </ul>
+                
+                <h3>Twitter/X Content Creator <span class="date">(2018-Present)</span></h3>
+                <em>Self-employed</em>
+                <ul>
+                    <li>Cultivated a healthy audience around Vegeta (SSGSS) in <em class="DB">Dragon Ball Fighterz</em>; resulting in thousands of views.</li>
+                    <li>Solidified myself as the go-to place for information about said character.</li> 
+                    <li>Consistently interacted with followers in a timely manner to accurately assist in information.</li>
+                    
+                </ul>
+                <h3>Rally's Drive-in</h3>
+                <em>Team Member <span class="date">(2016-2020)</span></em>
+                <ul>
+                    <li>Focused on interacting with customers.</li>
+                    <li>Learned to work in fast-paced work environments while multitasking.</li>
+                    <li>Provided support for the manager by taking on tasks such as <bold>scheduling</bold> and <bold>inventory</bold>.</li>
+                </ul>
+                
+            </div>        
+            <div class="Projects">
+                <h2>Projects</h2>
+                <h3>Resume Constructor <span class="date">(Jan, 2024)</span></h3>
+                <em>Lead Designer</em>
+                <ul>
+                    <li>Learned HTML and CSS to format and build engaging resumes for others.</li>
+                    <li>Maintained a steady workflow for targeted releases.</li>
+                </ul>
+                <h3>YouTube Content Creator <span class="date">(July, 2023)</span></h3>
+                <em>Lead Video Editor, Writer, Artist</em>
+                <ul>
+                    <li>Edit videos and animations to fit certain styles of <bold><a href="https://www.youtube.com/@MaverickDallas2/">content</a></bold>.</li>
+                    <li>Maintained respectful interactivity with my community.</li>
+                </ul>
+                <h3>Poetry Novelist <span class="date">(April 16, 2023)</span></h3>
+                <em>Lead Designer, Writer, Artist</em>
+                <ul>
+                    <li>Assumed multiple roles such as <bold>communicating</bold>, <bold>advertising</bold>, and <bold>maintaining </bold> customer satisfaction. </li>
+                    <li>Edited and released a novel with no budget. </li>
+                </ul>
+            </div>
+            </div>
+    </div>
+</section>
+
+    <script src="/blog/script.js"></script>
+</body>
+</html>
