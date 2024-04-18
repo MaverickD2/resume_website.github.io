@@ -29,6 +29,10 @@ header .subMenuContainer {
    
 }
 
+.menuButton {
+    display: none;
+}
+
 .subMenu ul {
     list-style: none;
     align-items: center;
