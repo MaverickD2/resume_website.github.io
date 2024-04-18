@@ -485,14 +485,14 @@ header .subMenuContainer {
         grid-template-columns: 1fr 1fr;
         margin: 20px auto;
         grid-template-rows: 1fr auto;
-        
+        place-items: center;
         
 
         
     }
     
     .codingcontainer img {
-        max-width: 500px;
+        max-width: 400px;
         border-radius: 5px;
         
         
@@ -501,7 +501,7 @@ header .subMenuContainer {
         padding: 15px;
         background: linear-gradient(to bottom right,  rgba(17, 27, 27, 0.7), rgba(63, 114, 117, 0.7));
         text-align: center;
-        max-width: 550px;
+        max-width: 450px;
         border-radius: 5px;
         box-shadow: 2px 2px 5px rgb(1, 36, 43);
     }
@@ -805,6 +805,7 @@ header .subMenuContainer {
         grid-auto-flow: row;
         gap: 20px;
         grid-template-columns: 1fr;
+        place-items: center;
         
     }
 
