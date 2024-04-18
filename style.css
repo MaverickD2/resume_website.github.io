@@ -10,7 +10,7 @@ body {
     background-color: rgb(26, 40, 41);
     min-width: 600px;
     max-width: fit-content;
-    max-width: 1080px;
+    max-width: 1920px;
     
 }
 header {
@@ -151,7 +151,6 @@ header .subMenuContainer {
 
 
 }
-
 
 
 
@@ -482,7 +481,7 @@ header .subMenuContainer {
         display: grid;
         grid-auto-flow: row;
         gap: 10px;
-        place-items: center;
+        
         margin: auto 20px;
         
         
