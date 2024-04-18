@@ -3,13 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    max-width: 1920px;
     
 }
 
 body {
     background-color: rgb(26, 40, 41);
     min-width: 600px;
-    max-width: fit-content;
+    
     max-width: 1920px;
     
 }
@@ -479,10 +480,10 @@ header .subMenuContainer {
 
     .coding-grid {
         display: grid;
-        grid-auto-flow: column;
+        grid-auto-flow: row;
         gap: 10px;
         grid-template-colums: 1fr 1fr;
-        margin: auto 20px;
+        margin: 20px auto;
         
         
 
