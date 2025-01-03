@@ -554,7 +554,7 @@ header .subMenuContainer {
         margin: 20px auto;
         
     }
-    .aboutcontainer a {
+    .aboutcontainer .paragraph a {
         text-decoration: none;
         color: aqua;
     }
