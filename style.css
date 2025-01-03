@@ -554,6 +554,10 @@ header .subMenuContainer {
         margin: 20px auto;
         
     }
+    .aboutcontainer a {
+        text-decoration: none;
+        color: aqua;
+    }
 
      .aboutcontainer .text {
         max-width: 700px;
